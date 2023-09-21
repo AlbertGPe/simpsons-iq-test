@@ -70,7 +70,7 @@ body {
   justify-content: space-between;
 }
 
-.juego-terminado {
+.end-game {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;

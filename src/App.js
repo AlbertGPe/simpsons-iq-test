@@ -12,10 +12,29 @@ function App() {
     if (isCorrect) {
       setPuntuation(puntuation + 1)
     }
+
     //add styles correct or incorret answers
     ev.target.classList.add(isCorrect ? 'correct' : 'incorrect');
-    //pass next question
+
+    //next question
+    setTimeout(() => {
+      if (actualQuestion === questions.length - 1) {
+        setIsFinished(true)
+      } else {
+        setActualQuestion(actualQuestion + 1)
+      }
+    }, 500)
   }
+
+  if (isFinished) 
+    return (
+      <main className="app">
+        <div className="end-game">
+          <span>You've got {puntuation} out of {questions.length}</span>
+          <button onClick={() => window.location.href="/"}>Play Again!</button>
+        </div>
+      </main>
+      );
 
   return (
     <main className="app">
