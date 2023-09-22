@@ -1,5 +1,6 @@
 import { useState } from "react";
 import questions from "./components/questions";
+import characters from "./components/characters";
 
 function App() {
 
@@ -26,7 +27,7 @@ function App() {
     }, 500)
   }
 
-  if (isFinished) 
+  if (isFinished) //TODO show image with character and puntuation. ARRAY of images and take image as puntuation (ARRAY[puntuation])
     return (
       <main className="app">
         <div className="end-game">
