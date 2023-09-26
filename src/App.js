@@ -31,7 +31,8 @@ function App() {
     return (
       <main className="app">
         <div className="end-game">
-          <span>You've got {puntuation} out of {questions.length}</span>
+          <img src={characters[puntuation].image} alt="" />
+          <span className="final-sentence">You are {characters[puntuation].name}!. You've got {puntuation} out of {questions.length}</span>
           <button onClick={() => window.location.href="/"}>Play Again!</button>
         </div>
       </main>

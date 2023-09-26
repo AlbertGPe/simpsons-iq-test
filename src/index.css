@@ -49,6 +49,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  padding: 20px;
 }
 
 .question-number {
@@ -76,6 +77,10 @@ body {
   justify-content: space-evenly;
   font-size: 24px;
   align-items: center;
+}
+
+.end-game span {
+  margin: 20px;
 }
 
 /* GRAL */
